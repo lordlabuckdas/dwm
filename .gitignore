@@ -1,0 +1,11 @@
+# generated binaries
+dwm
+
+# object files
+*.o
+
+# useless config
+config.h
+
+# patch files
+*.diff
