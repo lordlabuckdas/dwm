@@ -5,3 +5,5 @@ personal arch linux dwm config w/ some dracula colors
 ## patches applied
 
 * alpha
+* attach aside
+* rotate stack
