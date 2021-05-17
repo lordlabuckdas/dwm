@@ -109,9 +109,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0,                            XK_F1,     spawn,          {.v = volmutetogcmd } },
-	{ 0,                            XK_F2,     spawn,          {.v = voldwcmd } },
-	{ 0,                            XK_F3,     spawn,          {.v = volupcmd } },
+	{ MODKEY,                       XK_F1,     spawn,          {.v = volmutetogcmd } },
+	{ MODKEY,                       XK_F2,     spawn,          {.v = voldwcmd } },
+	{ MODKEY,                       XK_F3,     spawn,          {.v = volupcmd } },
 	{ 0,                            XK_Print,  spawn,          SHCMD("scrot ~/pics/ss_%Y_%m_%d_%H_%M_%S.png") },
 	{ MODKEY,                       XK_Print,  spawn,          SHCMD("scrot /tmp/scrot.png -e 'xclip -selection clipboard -target image/png -i $f'") },
 	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("scrot -s ~/pics/ss_%Y_%m_%d_%H_%M_%S.png") },
