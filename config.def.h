@@ -113,10 +113,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F1,     spawn,          {.v = volmutetogcmd } },
 	{ MODKEY,                       XK_F2,     spawn,          {.v = voldwcmd } },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volupcmd } },
-	{ 0,                            XK_Print,  spawn,          SHCMD("scrot ~/pics/ss_%Y_%m_%d_%H_%M_%S.png") },
-	{ MODKEY,                       XK_Print,  spawn,          SHCMD("scrot /tmp/scrot.png -e 'xclip -selection clipboard -target image/png -i $f'") },
-	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("scrot -s ~/pics/ss_%Y_%m_%d_%H_%M_%S.png") },
-	{ MODKEY|ShiftMask,             XK_Print,  spawn,          SHCMD("scrot -s /tmp/scrot.png -e 'xclip -selection clipboard -target image/png -i $f'") },
+	{ 0,                            XK_Print,  spawn,          SHCMD("flameshot full") },
+	{ MODKEY,                       XK_Print,  spawn,          SHCMD("flameshot full -c") },
+	{ MODKEY|ShiftMask,             XK_Print,  spawn,          SHCMD("flameshot gui") },
 	{ MODKEY,                       XK_F7,     spawn,          SHCMD("brightnessctl -q s 5-") },
 	{ MODKEY,                       XK_F8,     spawn,          SHCMD("brightnessctl -q s 5+") },
 };
